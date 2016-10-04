@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-simple-notification" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SimpleNotification</name>
+    <js-module name="SimpleNotification" src="www/SimpleNotification.js">
+        <clobbers target="cordova.plugins.SimpleNotification" />
+    </js-module>
+</plugin>
