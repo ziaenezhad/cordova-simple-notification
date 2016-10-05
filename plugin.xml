@@ -1,7 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-simple-notification" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>SimpleNotification</name>
-    <js-module name="SimpleNotification" src="www/SimpleNotification.js">
-        <clobbers target="cordova.plugins.SimpleNotification" />
-    </js-module>
+<plugin id="cordova-plugin-simple-notification" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>Cordova Simple Notification</name>
+	<description>Cordova Simple Notification Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,notification,status bar,simple notification</keywords>
+	<repo>https://github.com/sajjad-shirazy/Cordova-Simple-Notification</repo>
+	<js-module name="SimpleNotification" src="www/notification.js">
+		<clobbers target="notification" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Notification">
+				<param name="android-package" value="org.sajjadshirazy.cordova.notification.Notification" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">			
+		</config-file>
+		<source-file src="src/android/Notification.java" target-dir="src/org/sajjadshirazy/cordova/notification" />    	
+	</platform>
 </plugin>

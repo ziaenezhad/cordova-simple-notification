@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-simple-notification",
+  "version": "1.0.0",
+  "description": "Cordova Simple Notification Plugin",
+  "cordova": {
+    "id": "cordova-plugin-simple-notification",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajjad-shirazy/Cordova-Simple-Notification.git"
+  },
+  "keywords": [
+    "cordova",
+    "notification",
+    "status bar",
+    "simple notification",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Sajjad Shirazy",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/sajjad-shirazy/Cordova-Simple-Notification/issues"
+  },
+  "homepage": "https://github.com/sajjad-shirazy/Cordova-Simple-Notification#readme"
+}
